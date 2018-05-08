@@ -1,0 +1,20 @@
+.DS_Store
+
+# eclipse
+.classpath
+.project
+.settings/
+
+# IDEA
+*.iml
+.idea/
+
+# build
+target/
+!**/src/**/target
+classes/
+bin/
+CURRENT
+/common/kafka-service/leveldb/
+common/adx-geo/src/test/resources/ips.data
+common/adx-geo/src/test/resources/unknown-ips.data

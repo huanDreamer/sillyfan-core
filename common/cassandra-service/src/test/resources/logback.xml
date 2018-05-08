@@ -1,0 +1,30 @@
+<!DOCTYPE logback>
+<configuration>
+
+	<!-- <include resource="org/springframework/boot/logging/logback/base.xml"/> -->
+	
+	<include resource="org/springframework/boot/logging/logback/defaults.xml" />
+	<include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+	
+    <!-- 3rdparty Loggers -->
+    <logger name="org.springframework">
+        <level value="warn" />
+    </logger>
+    
+    <!-- How Cassandra Template generates cql statements -->
+    <logger name="org.springframework.data.cassandra.convert.MappingCassandraConverter">
+    	<level value="debug"/>
+    </logger>
+        
+    <!-- 项目的日志级别定义 -->
+    <logger name="top">
+        <level value="debug" />
+    </logger>
+    
+
+	<root level="INFO">
+		<appender-ref ref="CONSOLE" />
+		<!-- <appender-ref ref="FILE" /> -->
+	</root>
+
+</configuration>
