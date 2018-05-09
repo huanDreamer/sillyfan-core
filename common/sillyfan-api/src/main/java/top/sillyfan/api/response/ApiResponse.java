@@ -14,7 +14,6 @@ import top.sillyfan.api.response.code.ApiErrorCodeDef;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ApiResponse<T> {
 
-
     @JsonProperty("code")
     private Integer code;
 

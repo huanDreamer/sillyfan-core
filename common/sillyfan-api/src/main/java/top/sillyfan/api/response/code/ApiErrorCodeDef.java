@@ -4,6 +4,7 @@ public enum ApiErrorCodeDef {
 
     SUCCESS(ApiErrorCode.SUCCESS, "成功"),
     CODE_1000(ApiErrorCode.CODE_1000, "帐号或密码错误"),
+	CODE_1001(ApiErrorCode.CODE_1001, "请登录"),
 
 	;
 
